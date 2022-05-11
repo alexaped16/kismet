@@ -1,0 +1,44 @@
+.container{
+    display: flex; 
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+
+body{
+    background-color: #664AED;
+  }
+
+#activities-background{
+    background-color: #cb4445;
+}
+
+#yellow-body{
+    background-color: #ccff33;
+}
+
+
+
+
+
+html, h1, h2, h3{
+    font-family: Roboto; 
+    color: #ccff33;
+    text-transform: uppercase;
+}
+
+nav{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    letter-spacing: 5px; 
+    text-transform: uppercase;
+    background-color: #664AED;
+}
+
+
+/* activities & hours  */
+
+#calendar-link{
+    padding: 5px; 
+    margin-left: 600px;
+}
