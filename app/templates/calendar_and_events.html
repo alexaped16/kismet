@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
 <title>Title</title>
 </head>
-<body id="body-what-we-are">
+<body id="yellow-body">
 
-    <nav id="purple-nav" class="navbar navbar-expand-lg navbar-dark">
+    <nav id="red-nav" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
                 <span class="navbar-toggler-icon"></span>
@@ -25,29 +25,29 @@
                         <a class="nav-link font-weight-bold" href="{{ url_for('index') }}">Who We Are</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Calendar & Events</a>
+                        <a class="nav-link font-weight-bold" href="{{ url_for('activities_and_hours') }}">Activities & Hours</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class='container'>
-        <img src="/static/logo_background.png" height="50px" width="1125px">
+    <div class="container">
+        
+        
+        <img src="/static/events.png" height="200px" width="300px">
+        <img id="kismet-logo-events" src="/static/logo_background_purple.png" height="80px" width="450px">
+        <img id="kismet-logo-events" src="/static/kismet_extra_2.png" height="100px" width="100px">
+ 
     </div>
 
-    <div class='container'>
-        <img src="/static/what_we_are.png" height="450px" width="1125px">
-    </div>
 
-    <div class='container'>
-        <img src="/static/what_we_are_footer.png" height="450px" width="1125px">
+    <div class="container">
+        <img src="/static/events_list.png" height="825px" width="450px">
+        <img id="calendar-title" src="/static/calendar.png" height="150px" width="380px">
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-

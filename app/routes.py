@@ -17,7 +17,7 @@ def what_we_are():
     title = 'What We Are'
     return render_template('what_we_are.html',  title=title)
 
-@app.route('/calendar')
-def calendar():
-    title = 'Calendar'
-    return render_template('calendar.html',  title=title)
+@app.route('/calendar_and_events')
+def calendar_and_events():
+    title = 'Calendar and Events'
+    return render_template('calendar_and_events.html',  title=title)

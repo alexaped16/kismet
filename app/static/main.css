@@ -32,7 +32,15 @@ nav{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     letter-spacing: 5px; 
     text-transform: uppercase;
-    background-color: #664AED;
+    background-color: transparent;
+}
+
+#red-nav{
+    background-color: #cb4445;
+}
+
+#purple-nav{
+    background-color:#664AED;
 }
 
 
@@ -41,4 +49,17 @@ nav{
 #calendar-link{
     padding: 5px; 
     margin-left: 600px;
+}
+
+
+
+/* events and calendar */
+
+#calendar-title{
+    margin-right: 400px;
+}
+
+#kismet-logo-events{
+    padding-top: 30px; 
+    
 }
