@@ -1,7 +1,7 @@
 
 body{
     background-color: #664AED;
-  }
+}
 
 #activities-background{
     background-color: #cb4445;
@@ -20,7 +20,7 @@ body{
 }
 
 
-html, h1, h2, h3, title{
+html, h1, h2, h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ccff33;
     letter-spacing: 5px; 
@@ -29,7 +29,7 @@ html, h1, h2, h3, title{
 
 
 body h3:hover{
-    color: #664AED !important;
+    color:aliceblue !important;
  }
 
 nav{
@@ -38,14 +38,6 @@ nav{
     text-transform: uppercase;
     background-color:#664AED;
     opacity: 90%;
-}
-
-.nav-link {
-    color: #ccff33;
-}
-
-.nav-item>a:hover {
-    color: #664AED;
 }
 
 #red-nav{
@@ -90,6 +82,16 @@ nav{
 
 /* events and calendar */
 
+#transparent-nav{
+    background-color: #ccff33;
+}
+
+#transparent-nav a{
+    color:#664AED;
+}
+
+
+
 #events h3{
     color:#664AED;
     letter-spacing: 5px;
@@ -102,22 +104,44 @@ nav{
     font-size: 25px;
 }
 
-#events{
-    width: 500px;
-    height: 600px; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
+#events-logo{
+    opacity: 80%;
+    padding-top: 20px; 
+}
+
+#kismet-logo-hours-and-events{
+    position: absolute; 
+    opacity: 15%;
+}
+
+#events-label{
+    padding-top: 20px; 
+}
+
+.hours-flex{
+    display: flex;
+    justify-items: flex-start;
+}
+
+#discoball{
+    position: absolute; 
+    opacity: 40%; 
+    right:0%;
+}
+
+#plain-yellow-logo-hours{
+    opacity: 90%;
+}
+
+#reserve-tickets{
+    opacity: 75%;
+
 }
 
 
 
-#kismet-logo{
-    position: relative; 
-    left: 750px;
-    bottom: 10px; 
-}
+
+
 
 
 
@@ -127,7 +151,7 @@ nav{
 /* FORM GROUPS */
 
 .form-group{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 15px; 
     padding-top: 25px;
@@ -135,7 +159,7 @@ nav{
   }
   
 .form-label{
-      padding-top: 10px;
+      padding-top: 20px;
       color:#ccff33;
   }
   
@@ -144,13 +168,15 @@ nav{
   }
   
 #form{
-    width: 400px; 
+    width: 500px; 
     height: 600px;
   }
 
 #form h1{
     letter-spacing: 15px;
     font-size: 45px;
+    color:beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #form h1:hover{
@@ -160,7 +186,6 @@ nav{
   
 .form text{
     background-color: transparent;
-    color:#ccff33;
   }
   
 .form-item input{
@@ -181,7 +206,7 @@ nav{
 }
 
 .btn{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 15px; 
     padding: 10px; 
@@ -203,13 +228,8 @@ nav{
 
 /* join the community */
 
-
-
-#join-the-community{
-    background-color:#ccff33;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
+#disco-logo{
+    opacity: 80%;
 }
 
 #kismet-logo-join-the-community{
@@ -220,23 +240,16 @@ nav{
     padding-left: 200px; 
 }
 
-#container-red{
-    background-color:#ccff33;
-    opacity: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 200px;
+#tell-us-about-yourself{
+    padding-left: 100px; 
 }
 
-#container-red:hover { 
-    text-decoration : none;
-    background-color: #ccff33;
-    border-color:aliceblue;
+#plain-yellow-logo{
+    opacity: 70%;
+    position: absolute;
+    margin-top: 300px; 
+    padding-right: 200px;
 }
-
-
-
 
 
 
@@ -245,7 +258,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     max-width: 1390px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 25px;
 }
 .mytabs input[type="radio"] {
@@ -253,27 +266,36 @@ nav{
 }
 .mytabs label {
     padding: 20px;
-    background:#ccff33;
-    font-weight: bold;
-    color:#664AED;
+    background:#7f6aeb;
+    opacity: 90%;
+    color:beige;
 }
 
 .mytabs .tab {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background: transparent;
     order: 1;
     display: none;
-    color:#664AED;
+    color:#775fec;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    text-transform: lowercase;
+    padding-top: 40px; 
+    
 }
+
 .mytabs .tab h2 {
-    font-size: 3em;
-    color:#664AED;
-    letter-spacing: 10px;
+    font-size: 4em;
+    color:#765feb;
+    letter-spacing: 20px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 
 .mytabs p {
     font-size: 2em; 
+    padding-top: 40px; 
+    padding-bottom: 40px; 
 }
 
 .mytabs input[type='radio']:checked + label + .tab + .tab{
@@ -281,11 +303,14 @@ nav{
 }
 
 .mytabs input[type='radio']:checked + label + .tab {
-    display: block;
+    display:block;
 }
 
 .mytabs input[type="radio"]:checked + label {
-    background:#ccff33;
+    background:#664AED;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 

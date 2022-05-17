@@ -1,9 +1,37 @@
+<nav id="purple-nav" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar10">
+
+            </div>
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="{{ url_for('index') }}">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Calendar & Events</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="header-image-join-the-community" class="container container-items">
+    <img id="disco-logo" src="/static/join-the-community-footer.png" height="200px" width="1000px">
+</div>
+
+
 {% extends 'base.html' %}
 
 
 {% block content %}
 
+
+
 <img src="/static/logo_background.png" height="50px" width="1200px">
+<img id="plain-yellow-logo" src="/static/plain-yellow-logo.png" height="600px" width="800px">
 
 
 
@@ -31,25 +59,16 @@
                 </div>
             </form> 
 
-            <img src="/static/tell-us-about-yourself.png" height="400px" width="600px"> 
+            <img id="tell-us-about-yourself" src="/static/tell-us-about-yourself.png" height="480px" width="640px"> 
         
         </div>
     </div>
 
 
-    <div id="header-image-join-the-community" class="container container-items">
-        <img src="/static/join-the-community-image.png" height="400px" width="850px">
-    </div>
-
-    <div class="container container-items">
-        <div id="container-red" class="container">
-            <h3>Are you a creative in Chicago looking to get involved with Kismet? </h3> 
-        </div>          
-    </div>
-
 
 
     <img src="/static/logo_background.png" height="50px" width="1200px">
+   
 
 
 
