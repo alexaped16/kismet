@@ -12,7 +12,7 @@
 </head>
 <body id="yellow-body">
 
-    <nav id="red-nav" class="navbar navbar-expand-lg navbar-dark">
+    <nav id="purple-nav" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
                 <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
                         <a class="nav-link font-weight-bold" href="{{ url_for('index') }}">Who We Are</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('activities_and_hours') }}">Activities & Hours</a>
+                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
                     </li>
                 </ul>
             </div>
@@ -33,18 +33,68 @@
     </nav>
 
     <div class="container">
-        
-        
-        <img src="/static/events.png" height="200px" width="300px">
-        <img id="kismet-logo-events" src="/static/logo_background_purple.png" height="80px" width="450px">
-        <img id="kismet-logo-events" src="/static/kismet_extra_2.png" height="100px" width="100px">
- 
+        <img id="events-label" src="/static/events.png" height="200px" width="300px">
+        <img id="logo-background" src="/static/logo_background_purple.png" height="200px" width="800px">
+        <img id="kismet-logo" src="/static/low-opacity-logo.png" height="200px" width="300px">
     </div>
 
+    <div class="mytabs">
+        <input type="radio" id="tabmusic" name="mytabs" checked="checked">
+        <label for="tabmusic">Music</label>
+        <div class="tab">
+        <h2>DJ/Live Music</h2>
+        <p>Weekly dance nights in collab with local and national talent. Always a good sound = always a good time. </p>
+        <img id="calendar" src="/static/june-calendar.png" height="400px" width="600px">
+        </div>
 
-    <div class="container">
-        <img src="/static/events_list.png" height="825px" width="450px">
-        <img id="calendar-title" src="/static/calendar.png" height="150px" width="380px">
+        <input type="radio" id="tabcoffee" name="mytabs">
+        <label for="tabcoffee">Coffee</label>
+        <div class="tab">
+        <h2>Coffee & conversation</h2>
+        <p>Narrative and journey’s straight from the mouths of successful creatives. Actors, designers, entrepreneurs who dive into all the not so glamorous parts of making the dream life a reality.  </p>
+        <img id="calendar" src="/static/june-calendar.png" height="400px" width="600px">
+        </div>
+
+        <input type="radio" id="tabpresence" name="mytabs">
+        <label for="tabpresence">presence</label>
+        <div class="tab">
+        <h2>Practice is Presence</h2>
+        <p> Showing up as your whole self to do the work is hard. This workshop series hits tangible action items to build ourselves holistically. Subjects include finance, food, goal setting, communication, and more! </p>
+        <img id="calendar" src="/static/june-calendar.png" height="400px" width="600px">
+        </div>
+
+        <input type="radio" id="tabwellness" name="mytabs">
+        <label for="tabwellness">Wellness Days</label>
+        <div class="tab">
+        <h2>Wellness days</h2>
+        <p>Sunday morning yoga sessions coupled with meditations, holistic healing sessions, and local Chicago business’. </p>
+        <img id="calendar" src="/static/june-calendar.png" height="400px" width="600px">
+        </div>
+
+        <input type="radio" id="tabvendor" name="mytabs">
+        <label for="tabvendor">Vendor Markets</label>
+        <div class="tab">
+        <h2>Vendor Markets</h2>
+        <p>Archival vintage fashion, some of the most well known flea market sellers on the Chicago scene.</p>
+        <img id="calendar" src="/static/june-calendar.png" height="400px" width="600px">
+        </div>
+
+        <input type="radio" id="tabopenmic" name="mytabs">
+        <label for="tabopenmic">Open Mic</label>
+        <div class="tab">
+        <h2>Open Mic Nights</h2>
+        <p>A space for anyone and everyone to gather, showcase their talents, and enjoy the community!</p>
+        <img id="calendar" src="/static/june-calendar.png" height="400px" width="600px">
+        <img id="event-brite-link" src="/static/eventbritelink.png" height="400px" width="600px">
+        </div>
+
+        <input type="radio" id="tabmore" name="mytabs">
+        <label for="tabmore">and more...</label>
+        <div class="tab">
+        <h2>and more ...</h2>
+        <p>Offering space for photo shoots, private events, experiential parties, pop-up restaurants, flash events, endless opportunity to fall into your kismet. </p>
+        <img src="/static/kismet_clear_logo.png" height="400px" width="600px">
+        </div>
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

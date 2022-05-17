@@ -1,10 +1,3 @@
-.container{
-    display: flex; 
-    justify-content: center;
-    justify-content: space-between;
-}
-
-
 
 body{
     background-color: #664AED;
@@ -18,48 +11,282 @@ body{
     background-color: #ccff33;
 }
 
+.container-items{
+    display: flex;
+}
+
+#logo-background{
+    position: absolute; 
+}
 
 
-
-
-html, h1, h2, h3{
-    font-family: Roboto; 
+html, h1, h2, h3, title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ccff33;
+    letter-spacing: 5px; 
     text-transform: uppercase;
 }
 
+
+body h3:hover{
+    color: #664AED !important;
+ }
+
 nav{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    letter-spacing: 5px; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px; 
     text-transform: uppercase;
-    background-color: transparent;
+    background-color:#664AED;
+    opacity: 90%;
+}
+
+.nav-link {
+    color: #ccff33;
+}
+
+.nav-item>a:hover {
+    color: #664AED;
 }
 
 #red-nav{
     background-color: #cb4445;
 }
 
-#purple-nav{
-    background-color:#664AED;
+
+
+/* Home page (who we are) */
+
+.parent {
+    background-color: #664AED;
+    height: 200px;
+    width:300px;
 }
+
+.child {
+    background-color:#664AED;
+    height: 50%;
+    width: 50%;
+    transition: transform 1s linear ease-in-out;
+}
+
+.parent:hover .child{
+    transform: translateX(100%);
+    background-color:#664AED;
+    opacity: 20%;
+}
+
+#home-logo{
+    position: relative;
+    left: 600px; 
+    bottom: 250px; 
+    opacity: 20%;
+}
+
 
 
 /* activities & hours  */
-
-#calendar-link{
-    padding: 5px; 
-    margin-left: 600px;
-}
 
 
 
 /* events and calendar */
 
-#calendar-title{
-    margin-right: 400px;
+#events h3{
+    color:#664AED;
+    letter-spacing: 5px;
+    font-size: 22px;
 }
 
-#kismet-logo-events{
-    padding-top: 30px; 
-    
+#events h3:hover{
+    color:#cb4445;
+    letter-spacing: 10px;
+    font-size: 25px;
 }
+
+#events{
+    width: 500px;
+    height: 600px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+
+#kismet-logo{
+    position: relative; 
+    left: 750px;
+    bottom: 10px; 
+}
+
+
+
+
+
+
+/* FORM GROUPS */
+
+.form-group{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 15px; 
+    padding-top: 25px;
+    letter-spacing: 10px;
+  }
+  
+.form-label{
+      padding-top: 10px;
+      color:#ccff33;
+  }
+  
+.form-item{
+      padding: 3px;  
+  }
+  
+#form{
+    width: 400px; 
+    height: 600px;
+  }
+
+#form h1{
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+#form h1:hover{
+    letter-spacing: 17px;
+    font-size: 45px;
+}
+  
+.form text{
+    background-color: transparent;
+    color:#ccff33;
+  }
+  
+.form-item input{
+    border: 1px solid #ccff33;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  
+.form-item textarea{
+    border: 1px solid #ccff33;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  
+.form-label button{
+    width: 50%;
+    border:#ccff33;
+}
+
+.btn{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 15px; 
+    padding: 10px; 
+    letter-spacing: 10px;
+    color:#ccff33;
+    width: 50%;
+}
+  
+#button :hover{
+    text-decoration : none;
+    color: #664AED;
+    background-color: #ccff33;
+    border-color:aliceblue;
+}
+
+
+
+
+
+/* join the community */
+
+
+
+#join-the-community{
+    background-color:#ccff33;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#kismet-logo-join-the-community{
+    padding-top: 30px; 
+}
+
+#header-image-join-the-community{
+    padding-left: 200px; 
+}
+
+#container-red{
+    background-color:#ccff33;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+#container-red:hover { 
+    text-decoration : none;
+    background-color: #ccff33;
+    border-color:aliceblue;
+}
+
+
+
+
+
+
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1390px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 20px;
+    background:#ccff33;
+    font-weight: bold;
+    color:#664AED;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    order: 1;
+    display: none;
+    color:#664AED;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+    color:#664AED;
+    letter-spacing: 10px;
+}
+
+.mytabs p {
+    font-size: 2em; 
+}
+
+.mytabs input[type='radio']:checked + label + .tab + .tab{
+    display: block;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background:#ccff33;
+}
+
+
+

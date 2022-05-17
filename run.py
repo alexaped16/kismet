@@ -1,5 +1,5 @@
 from app import app, db
-from app.models import Contact
+from app.models import joinTheCommunity
 
 @app.shell_context_processor
 def make_context():
