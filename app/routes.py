@@ -9,10 +9,15 @@ def index():
     return render_template('index.html',  title=title)
 
 
-@app.route('/activities&hours')
-def activities_and_hours():
-    title = 'Activities & Hours'
-    return render_template('activities&hours.html',  title=title)
+@app.route('/hours')
+def hours():
+    title = 'Hours'
+    return render_template('hours.html',  title=title)
+
+@app.route('/activities')
+def activities():
+    title = 'Activities'
+    return render_template('activities.html',  title=title)
 
 @app.route('/what_we_are')
 def what_we_are():

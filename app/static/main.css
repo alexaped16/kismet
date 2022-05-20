@@ -3,21 +3,18 @@ body{
     background-color: #664AED;
 }
 
-#activities-background{
-    background-color: #cb4445;
-}
 
-#yellow-body{
-    background-color: #ccff33;
-}
 
 .container-items{
     display: flex;
 }
 
-#logo-background{
-    position: absolute; 
+.container-center{
+    display:flex;
+    justify-content: center;
 }
+
+
 
 
 html, h1, h2, h3{
@@ -36,12 +33,15 @@ nav{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 10px; 
     text-transform: uppercase;
-    background-color:#664AED;
+    background-color:transparent;
     opacity: 90%;
+    margin-top: 50px; 
+    margin-bottom: 10px;
 }
 
-#red-nav{
-    background-color: #cb4445;
+
+#transparent-nav a{
+    color: #ccff33;
 }
 
 
@@ -52,6 +52,7 @@ nav{
     background-color: #664AED;
     height: 200px;
     width:300px;
+     
 }
 
 .child {
@@ -59,6 +60,8 @@ nav{
     height: 50%;
     width: 50%;
     transition: transform 1s linear ease-in-out;
+    margin-left: 50px;
+    padding: none;  
 }
 
 .parent:hover .child{
@@ -76,21 +79,87 @@ nav{
 
 
 
-/* activities & hours  */
+/* hours  */
+
+
+#grad {
+    background-image: linear-gradient(to right, #664AED , #cb4445);
+}
+
+.white{
+    background-color: aliceblue;
+    opacity: 90%;
+}
+
+#events-hours-background-logo{
+    margin-left: 130px;
+    margin-top: 10px;  
+}
+
+
+.disco{
+    display: flex;
+    flex-direction: column;
+}
+
+#hours{
+    position: relative; 
+    bottom: 580px; 
+    margin-right: 10%; 
+}
+
+#operational-hours{
+    opacity: 90%;
+    padding-top: 30px; 
+}
+
+#hours-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#discoball{
+    position: absolute; 
+    opacity: 30%;
+    padding-top: 30px; 
+    
+}
+
+#plain-yellow-logo-hours{
+    opacity: 50%;
+    position: relative;
+    left: 630px; 
+    top: 340px; 
+
+  
+}
+
+
+
 
 
 
 /* events and calendar */
 
-#transparent-nav{
-    background-color: #ccff33;
-}
+
 
 #transparent-nav a{
-    color:#664AED;
+    color:#ccff33;
 }
 
+.events-container{
+    display: flex;
+    justify-content: center;
+}
 
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#logo-background-events{
+    padding: 0px; 
+}
 
 #events h3{
     color:#664AED;
@@ -116,21 +185,6 @@ nav{
 
 #events-label{
     padding-top: 20px; 
-}
-
-.hours-flex{
-    display: flex;
-    justify-items: flex-start;
-}
-
-#discoball{
-    position: absolute; 
-    opacity: 40%; 
-    right:0%;
-}
-
-#plain-yellow-logo-hours{
-    opacity: 90%;
 }
 
 #reserve-tickets{
@@ -160,7 +214,7 @@ nav{
   
 .form-label{
       padding-top: 20px;
-      color:#ccff33;
+      color:beige;
   }
   
 .form-item{
@@ -211,7 +265,7 @@ nav{
     font-size: 15px; 
     padding: 10px; 
     letter-spacing: 10px;
-    color:#ccff33;
+    color:beige;
     width: 50%;
 }
   
@@ -223,32 +277,95 @@ nav{
 }
 
 
+/* activities */
+
+
+#grad-2 {
+    background-image: linear-gradient(to right, #cb4445, #664AED);
+}
+
+#activities-background-logo{
+    margin-left: 10%;
+}
+
+#activities-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+.purple{
+    background-color:#7f6aeb;
+}
+
+#plain-yellow-logo-activities{
+    opacity: 30%;
+    position:absolute;
+}
+
+#activities-label{
+    position: absolute; 
+    opacity: 80%;
+}
+
+.activites-footer{
+    display: flex; 
+    justify-content:flex-end;
+}
+
+
 
 
 
 /* join the community */
 
 #disco-logo{
-    opacity: 80%;
-}
-
-#kismet-logo-join-the-community{
-    padding-top: 30px; 
+    padding: 20px;
+    opacity: 75%;
+    padding-left: 300px;
+    position: relative; 
+    bottom: 80px; 
+    
 }
 
 #header-image-join-the-community{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo-background-join{
     padding-left: 200px; 
 }
 
-#tell-us-about-yourself{
+#join-the-community-title{
     padding-left: 100px; 
+    padding-top: 50px; 
+}
+
+#tell-us-about-yourself{
+    padding-left: 200px; 
+    padding-top: 50px; 
 }
 
 #plain-yellow-logo{
-    opacity: 70%;
+    opacity: 30%;
+    position: relative;
+    right: 600px;
+    bottom: 300px;  
+
+}
+
+#form{
+    padding-top: 50px; 
+}
+
+.join-container{
+    margin-bottom: 100px;
     position: absolute;
-    margin-top: 300px; 
-    padding-right: 200px;
+    margin-left: 150px;
+    margin-top: 100px; 
 }
 
 
@@ -257,16 +374,16 @@ nav{
 .mytabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1390px;
+    max-width: 1400px;
     margin: 20px auto;
-    padding: 25px;
+    padding: 10px;
 }
 .mytabs input[type="radio"] {
     display: none;
 }
 .mytabs label {
     padding: 20px;
-    background:#7f6aeb;
+    background:transparent;
     opacity: 90%;
     color:beige;
 }
@@ -277,7 +394,7 @@ nav{
     background: transparent;
     order: 1;
     display: none;
-    color:#775fec;
+    color:transparent;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
     text-transform: lowercase;
@@ -287,7 +404,7 @@ nav{
 
 .mytabs .tab h2 {
     font-size: 4em;
-    color:#765feb;
+    color:#ccff33;
     letter-spacing: 20px; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
@@ -296,6 +413,7 @@ nav{
     font-size: 2em; 
     padding-top: 40px; 
     padding-bottom: 40px; 
+    text-transform: capitalize;
 }
 
 .mytabs input[type='radio']:checked + label + .tab + .tab{
@@ -307,7 +425,7 @@ nav{
 }
 
 .mytabs input[type="radio"]:checked + label {
-    background:#664AED;
+    background:transparent;
     color: white;
     font-weight: bold;
     letter-spacing: 5px;

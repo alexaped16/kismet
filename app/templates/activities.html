@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+<title>Title</title>
+</head>
+
+<body id="grad-2">
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar10">
+                
+                </div>
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('hours') }}">Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Calendar & Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container disco">
+        <img id="events-hours-background-logo" src="/static/logo_background.png" height="50px" width="1000px">
+    </div>
+
+    <img id="activities-label" src="/static/activities-label.png" height="1000px" width="200px">
+    
+
+
+
+    
+
+    <div id="activities-menu" class="container">
+        <div class="mytabs">
+            <input type="radio" id="tabdailypopup" name="mytabs" checked="checked">
+            <label for="tabdailypopup">1</label>
+            <div class="tab">
+            <h2>Daily Pop-up</h2>
+            <p>$19 Ticket</p>
+            </div>
+
+            <input type="radio" id="tabweeknight" name="mytabs">
+            <label for="tabweeknight">2</label>
+            <div class="tab">
+            <h2>Weeknight community events - ticket/variable </h2>
+            <p>workshops/seminars</p>
+            <p>open mics</p>
+            </div>
+
+            <input type="radio" id="tabweekend" name="mytabs">
+            <label for="tabweekend">3</label>
+            <div class="tab">
+            <img src="/static/social-events.png" height="360px" width="600px">
+            </div>
+
+            <input type="radio" id="tabrentals" name="mytabs">
+            <label for="tabrentals">4</label>
+            <div class="tab">
+            <h2>Private Rentals</h2>
+            <p>peer space</p>
+            <p>photo shoots</p>
+            <p>external brands</p>
+            <p>galleries/showcasing</p>
+            </div>
+        </div>
+    </div>  
+
+
+    <div class="container activites-footer">
+        <img src="/static/activities-footer.png" height="500px" width="1000px">
+    </div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
