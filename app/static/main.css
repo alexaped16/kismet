@@ -73,8 +73,18 @@ nav{
 #home-logo{
     position: relative;
     left: 600px; 
-    bottom: 250px; 
+    bottom: 550px; 
     opacity: 20%;
+}
+
+#moving-logo{
+    position: absolute; 
+}
+
+#home-info{
+    position: relative;
+    bottom: 130px; 
+
 }
 
 
@@ -94,6 +104,10 @@ nav{
 #events-hours-background-logo{
     margin-left: 130px;
     margin-top: 10px;  
+}
+
+.cal-link{
+    display: flex; 
 }
 
 
