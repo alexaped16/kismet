@@ -56,26 +56,14 @@
         
         <div class="container container-items">
 
+            <form action="https://formsubmit.co/c863cc743629da090e35d95ce43f1c0d" method="POST">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="message" required>
+                <button type="submit">Send</button>
+            </form>
 
             
-            <form id="form" action="https://formsubmit.co/info@kismetstudiochi.com" method="post">
-                {{ form.csrf_token }}
-                
-                
-                <img  id="join-the-community-title" src="/static/tell-us-about-yourself-title.png" height="200px" width="900px">
-                <div class="form-group">
-                    <div class="form-label">
-                    {{ form.email.label }}</div>
-                    <div class="form-item">
-                    {{ form.email(class='form-control') }}</div>
-                    <div class="form-label">
-                    {{ form.message.label }}</div>
-                    <div id="button" class="form-item">
-                    {{ form.message(class='form-control')}}</div>
-                    <div id="button" class="form-label">
-                    {{ form.submit(class='btn btn-outline-light w-100') }}</div>
-                </div>
-            </form> 
+
 
 
 
