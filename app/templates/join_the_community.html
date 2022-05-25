@@ -1,4 +1,18 @@
-<nav id="purple-nav" class="navbar navbar-expand-lg navbar-dark">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+<title>Title</title>
+</head>
+<body id="grad-3">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
             <span class="navbar-toggler-icon"></span>
@@ -20,46 +34,55 @@
 
 
 
-<img id="logo-background-join" src="/static/logo_background.png" height="50px" width="1200px">
+
+<div class="container"><img id="logo-background-join" src="/static/logo_background.png" height="50px" width="1100px"></div>
 
 
 
 
 
-<div class="container"></div>
+    <div id="grad-2" class="container join-container">
 
 
 
-
-
-    <div id="grad" class="container join-container">
+        <div id="header-image-join-the-community" class="container">
+            <img src="/static/join-the-community.png" height="220px" width="1100px"> 
+            <img src="/static/activities-footer.png" height="450px" width="1125px">
+        </div>
 
         <div class="container">
             <img id="disco-logo" src="/static/join-the-community-header.png" height="200px" width="1100px">
         </div>
 
-        <div id="header-image-join-the-community" class="container">
-            <img src="/static/join-the-community.png" height="200px" width="1000px"> 
-            <img src="/static/activities-footer.png" height="450px" width="1125px">
-        </div>
+
 
         
         
         <div class="container container-items">
 
-            <form action="https://formsubmit.co/37b2d7dbd2ca1a714bc40ff1c11adbcc" method="POST">
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="message" required>
-                <button type="submit">Send</button>
-            </form>
-
-            
-
+            <div class="container">
+                <img src="/static/tell-us-about-yourself-title.png" height="150px" width="900px">
+                <form target="_blank" action="https://formsubmit.co/c863cc743629da090e35d95ce43f1c0d" method="POST">
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+                </form>
+              </div>
 
 
 
         
         </div>
+
+
         <img id="tell-us-about-yourself" src="/static/tell-us-about-yourself.png" height="475px" width="1000px"> 
 
 

@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
 <title>Title</title>
 </head>
-<body>
+<body id="grad-3">
 
     <nav id="purple-nav" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -25,8 +25,18 @@
                         <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="{{ url_for('hours') }}">Hours</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -34,51 +44,73 @@
         
     </div>
 
-    <div class='container'>
-        <img src="/static/logo_background.png" height="50px" width="1125px">
-    </div>
 
-    <div class='container'>
-        <img src="/static/who-we-are.png" height="150px" width="1250px">
-    </div>
-
-    
-
-    <div class="container container-center">
-        <div class="parent">
-            <div class="child">
-                
-                <img id="moving-logo" src="/static/kismet_home.png" height="100px" width="150px">
-                
-            </div>
-        </div>
-    </div>
-
-    <div class='container'>
-        <img id="home-info" src="/static/home-info.png" height="750px" width="1000px">
-    </div>
-            
-    
-
-
-        <div class='container'>
-            <img src="/static/logo_background.png" height="50px" width="1000px">
-        </div>
+    <div class="hero-title">
+        <div class="hero-title-contents">
+            <img src="/static/logo_background.png" height="50px" width="2000px">
+            <img id=kismet-label src="/static/kismet-label.png" height="170px" width="1417px">
+            <img src="/static/logo_background.png" height="50px" width="2000px">
         </div>
     </div>
 
 
 
-
-
-    <div class="container">
-        <img id="home-logo" src="/static/low-opacity-logo.png" height="800px" width="1200px">
+    <div class="heroImage">
+        <div class="heroContents">
+            <img src="/static/hero-image-2.png" height="320px" width="480px">
+            <img src="/static/hero-image.png" height="320px" width="480px">
+            <img src="/static/hero-image-3.png" height="320px" width="480px">
+        </div>
     </div>
 
+
+    <div id=location class='container container-space-between'>  
+        <img src="/static/location.png" height="300px" width="500px">
+        <img src="/static/19.png" height="475px" width="475px">
+    </div>
+
+
+    <div class="heroImage">
+        <div class="heroContents">
+            <img src="/static/vision-label.png" height="300px" width="600px">
+        </div>
+    </div>
+
+    <div class='container container-space-between'>  
+        <img src="/static/vision-description.png" height="500px" width="1000px">
+    </div>
+
+
+
+    <div class="heroImage">
+        <div class="heroContents">
+            <img src="/static/mission-label.png" height="300px" width="600px">
+        </div>
+    </div>
+
+    <div class='container container-space-between'>  
+        <img src="/static/mission-description.png" height="500px" width="1000px">
+    </div>
 
 
     
         
+
+
+
+
+        </div>
+
+        
+
+                
+    
+
+
+
+
+    </div>
+     
     
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

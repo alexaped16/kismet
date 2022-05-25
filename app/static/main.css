@@ -44,38 +44,56 @@ nav{
     color: #ccff33;
 }
 
+#location{
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    align-items: center;
+}
+
+#kismet-label{
+    margin-left: 40px; 
+}
+
+.heroImage {
+	background: linear-gradient(rgba(255, 215, 215, 0.5), rgba(255, 215, 215, 0.5));
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+}
+
+.heroContents {
+	padding: 25px;
+	text-align: center;
+	color: white;
+}
+
+.hero-title{
+    background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+    height: 100%;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+
 
 
 /* Home page (who we are) */
 
-.parent {
-    background-color: #664AED;
-    height: 200px;
-    width:300px;
-     
+#grad-3{
+    background-image: linear-gradient(to right , #cb4445, #664AED);
 }
 
-.child {
-    background-color:#664AED;
-    height: 50%;
-    width: 50%;
-    transition: transform 1s linear ease-in-out;
-    margin-left: 50px;
-    padding: none;  
+#purple{
+    background-color:#ccff33;
 }
 
-.parent:hover .child{
-    transform: translateX(100%);
-    background-color:#664AED;
-    opacity: 20%;
+#discoball-home{
+    opacity: 30%
 }
 
-#home-logo{
-    position: relative;
-    left: 600px; 
-    bottom: 550px; 
-    opacity: 20%;
-}
 
 #moving-logo{
     position: absolute; 
@@ -104,10 +122,6 @@ nav{
 #events-hours-background-logo{
     margin-left: 130px;
     margin-top: 10px;  
-}
-
-.cal-link{
-    display: flex; 
 }
 
 
@@ -161,50 +175,48 @@ nav{
     color:#ccff33;
 }
 
+#events-label{
+    margin-right: 40px; 
+}
+
+#tickets-background-logo{
+    margin-top: 50px; 
+    margin-left: 120px; 
+}
+
+#events-label-tickets{
+    padding-right: 50px; 
+    margin-right: 70px;
+    margin-top: 10px; 
+}
+
 .events-container{
     display: flex;
     justify-content: center;
 }
 
-.center{
+.events-tabs-container{
+    padding-left: 100px; 
+}
+
+
+
+.container-space-between{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #logo-background-events{
     padding: 0px; 
 }
 
-#events h3{
-    color:#664AED;
-    letter-spacing: 5px;
-    font-size: 22px;
-}
 
-#events h3:hover{
-    color:#cb4445;
-    letter-spacing: 10px;
-    font-size: 25px;
-}
-
-#events-logo{
-    opacity: 80%;
-    padding-top: 20px; 
-}
 
 #kismet-logo-hours-and-events{
     position: absolute; 
-    opacity: 15%;
+    
 }
 
-#events-label{
-    padding-top: 20px; 
-}
-
-#reserve-tickets{
-    opacity: 75%;
-
-}
 
 
 
@@ -224,7 +236,7 @@ nav{
     font-size: 15px; 
     padding-top: 25px;
     letter-spacing: 10px;
-  }
+}
   
 .form-label{
       padding-top: 20px;
@@ -240,35 +252,45 @@ nav{
     height: 600px;
   }
 
-#form h1{
-    letter-spacing: 15px;
-    font-size: 45px;
-    color:beige;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 #form h1:hover{
     letter-spacing: 17px;
     font-size: 45px;
 }
   
-.form text{
-    background-color: transparent;
-  }
   
-.form-item input{
-    border: 1px solid #ccff33;
-    font-size: 20px;
+.col input{
+    font-size: 15px;
     background-color: transparent;
-  }
+}
+
+.col input::placeholder{
+    color:beige;  
+    opacity: 70%;
+}
+
+.form-group textarea::placeholder{
+    color:beige; 
+    opacity: 70%; 
+}
+
+.form-group .placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px; 
+    padding: 10px; 
+    letter-spacing: 10px;
+    color:beige;
+}
   
 .form-item textarea{
     border: 1px solid #ccff33;
     font-size: 20px;
     background-color: transparent;
-  }
+}
   
-.form-label button{
+.btn{
     width: 50%;
     border:#ccff33;
 }
@@ -277,10 +299,25 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 15px; 
-    padding: 10px; 
+    margin-top: 20px; 
     letter-spacing: 10px;
-    color:beige;
+    color:black;
+    background-color:beige;
     width: 50%;
+}
+
+.form-control{
+    text-transform: uppercase;
+    font-size: 15px; 
+    margin-top: 20px; 
+    letter-spacing: 10px;
+    background-color: transparent;
+    
+}
+
+.form-group{
+    width: 50%;
+    border:#ccff33;
 }
   
 #button :hover{
@@ -295,7 +332,7 @@ nav{
 
 
 #grad-2 {
-    background-image: linear-gradient(to right, #cb4445, #664AED);
+    background-image: linear-gradient(to left, #cb4445, #664AED);
 }
 
 #activities-background-logo{
@@ -304,8 +341,9 @@ nav{
 
 #activities-menu{
     display: flex;
-    justify-content: center;
+    justify-content:end;
     margin-top: 5%;
+    margin-left: 200px; 
 }
 
 
@@ -321,6 +359,7 @@ nav{
 #activities-label{
     position: absolute; 
     opacity: 80%;
+    margin-left: 100px; 
 }
 
 .activites-footer{
@@ -334,19 +373,23 @@ nav{
 
 /* join the community */
 
+
+
+
+
 #disco-logo{
     padding: 20px;
-    opacity: 75%;
+    opacity: 90%;
     padding-left: 300px;
     position: relative; 
     bottom: 80px; 
-    
 }
 
 #header-image-join-the-community{
     display: flex; 
     justify-content: center;
     flex-direction: column;
+    margin-left: 100px; 
 }
 
 #logo-background-join{
@@ -360,7 +403,8 @@ nav{
 
 #tell-us-about-yourself{
     padding-left: 200px; 
-    padding-top: 50px; 
+    padding-top: 50px;
+    margin-bottom: 200px;  
 }
 
 #plain-yellow-logo{
@@ -368,7 +412,6 @@ nav{
     position: relative;
     right: 600px;
     bottom: 300px;  
-
 }
 
 #form{
@@ -389,17 +432,15 @@ nav{
     display: flex;
     flex-wrap: wrap;
     max-width: 1400px;
-    margin: 20px auto;
-    padding: 10px;
+    margin: 40px auto;
 }
 .mytabs input[type="radio"] {
     display: none;
 }
 .mytabs label {
-    padding: 20px;
+    padding: 40px;
     background:transparent;
-    opacity: 90%;
-    color:beige;
+
 }
 
 .mytabs .tab {
