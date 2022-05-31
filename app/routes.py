@@ -33,3 +33,42 @@ def join_the_community():
     title = 'Join The Community'
 
     return render_template('join_the_community.html', title=title)
+
+
+
+
+@app.route('/DJ')
+def DJ():
+    title = 'DJ'
+    return render_template('DJ.html',  title=title)
+
+@app.route('/WD')
+def WD():
+    title = 'WD'
+    return render_template('WD.html',  title=title)
+
+@app.route('/PIP')
+def PIP():
+    title = 'PIP'
+    return render_template('PIP.html',  title=title)
+
+@app.route('/CC')
+def CC():
+    title = 'CC'
+    return render_template('CC.html',  title=title)
+
+@app.route('/VM')
+def VM():
+    title = 'VM'
+    return render_template('VM.html',  title=title)
+
+@app.route('/ANDMORE')
+def ANDMORE():
+    title = 'ANDMORE'
+    return render_template('ANDMORE.html',  title=title)
+
+
+
+
+
+

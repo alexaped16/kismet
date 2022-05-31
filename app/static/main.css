@@ -3,7 +3,11 @@ body{
     background-color: #664AED;
 }
 
-
+.flex-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
 
 .container-items{
     display: flex;
@@ -14,12 +18,25 @@ body{
     justify-content: center;
 }
 
+@media (max-width:768px){
+    .hero-image-test{
+        height: 80%;
+        width: 80%
+    }
 
+}
 
+@media (max-width:768px){
+    #kismet-label{
+        height: 100%;
+        width: 100%
+    }
+
+}
 
 html, h1, h2, h3{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #ccff33;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
     letter-spacing: 5px; 
     text-transform: uppercase;
 }
@@ -431,7 +448,7 @@ nav{
 .mytabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 100px;
     margin: 40px auto;
 }
 .mytabs input[type="radio"] {
@@ -444,7 +461,7 @@ nav{
 }
 
 .mytabs .tab {
-    width: 100%;
+    width: 10%;
     padding: 10px;
     background: transparent;
     order: 1;

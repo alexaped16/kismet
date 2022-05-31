@@ -12,7 +12,7 @@
 </head>
 <body id="grad">
 
-    <nav id="transparent-nav" class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
                 <span class="navbar-toggler-icon"></span>
@@ -32,110 +32,43 @@
         </div>
     </nav>
 
-    
+    <div class="container">
+        <div class="container flex-wrap">
+            <img id=kismet-label src="/static/events/events-label.png" height="80%" width="80%">
+            <img id=kismet-label src="/static/events/tickets-available-soon.png" height="50%" width="50%">
+            <h3 id=kismet-label>Click to learn about different events!</h3>
+        </div>
+    </div>
+
+
+
+    <!-- TEST -->
 
     <div class="container">
-        <img id="events-hours-background-logo" src="/static/logo_background.png" height="50px" width="1000px">
-    </div>
-
-    <div class="container events-container">
-        <img id="events-label" src="/static/events/events-label.png" height="200px" width="1000px">
-    </div>
-
-    <div class="container events-container">
-        <img id="tickets-background-logo" src="/static/logo_background.png" height="30px" width="800px">
-        <img id="events-label-tickets" src="/static/events/tickets-available-soon.png" height="100px" width="600px">
-    </div>
-
-    <div class="container events-tabs-container">
-    
-
-    
-
-        <div class="mytabs">
-            <input type="radio" id="tabmusic" name="mytabs" checked="checked">
-            <label for="tabmusic"><img src="/static/events/dj-button.png" height="100px" width="100px"></label>
-            <div class="tab">
-                <div class="container container-space-between"><img src="/static/events/dj-label.png" height="200px" width="1000px"></div>
-            
-                <div class="container container-space-between">
-                    <img id="calendar" src="/static/events/dj-events.png" height="700px" width="450px">
-                    <img id="reserve-tickets" src="/static/events/dj-description.png" height="600px" width="400px">
-                </div>
-            </div>
+        <div class="container container-space-between">
+            <a id=kismet-label href="{{ url_for('DJ') }}"><img  src="/static/events/dj-button.png" height="50%" width="50%"></a>
+            <a id=kismet-label href="{{ url_for('CC') }}"><img  src="/static/events/the-cup-g0ac03a488_1920.png" height="50%" width="50%"></a>
 
 
-
-            <input type="radio" id="tabcoffee" name="mytabs">
-            <label for="tabcoffee"><img src="/static/events/the-cup-g0ac03a488_1920.png" height="100px" width="100px"></label>
-            <div class="tab">
-                <div class="container container-space-between"><img src="/static/events/coffee-conversation-label.png" height="200px" width="1000px"></div>
-            
-                <div class="container container-space-between">
-                    <img id="calendar" src="/static/events/Kismet-coffee-events.png" height="700px" width="450px">
-                    <img id="reserve-tickets" src="/static/events/coffee-and-conversation-description.png" height="600px" width="400px">
-                </div>
-            </div>
-
-
-
-            <input type="radio" id="tabpresence" name="mytabs">
-            <label for="tabpresence"><img src="/static/events/55.png" height="100px" width="100px"></label>
-            <div class="tab">
-                <div class="container container-space-between"><img src="/static/events/practice-is-presence.png" height="200px" width="1000px"></div>
-                
-                <div class="container container-space-between">
-                    <img id="reserve-tickets" src="/static/events/presence-description.png" height="600px" width="400px">
-                    <img id="calendar" src="/static/plain-yellow-logo.png" height="400px" width="400px">
-                </div>
-            </div>
-
-            <input type="radio" id="tabwellness" name="mytabs">
-            <label for="tabwellness"><img src="/static/events/wellness-button.png" height="100px" width="100px"></label>
-            <div class="tab">
-                <div class="container container-space-between"><img src="/static/events/wellness-days-label.png" height="200px" width="1000px"></div>
-            
-                    <div class="container container-space-between">     
-                        <img id="reserve-tickets" src="/static/events/wellness-days-description.png" height="600px" width="400px">
-                        <img id="calendar" src="/static/events/wellness-events.png" height="700px" width="450px">
-                    </div>
-            </div>
-
-            <input type="radio" id="tabvendor" name="mytabs">
-            <label for="tabvendor"><img src="/static/events/vendor-markets-button.png" height="100px" width="100px"></label>
-            <div class="tab">
-                <div class="container container-space-between"><img src="/static/events/vendor-markets-label.png" height="200px" width="1000px"></div>
-
-                <div class="container container-space-between">
-                    <img id="calendar" src="/static/events/vendor-day-events.png" height="700px" width="450px">
-                    <img id="reserve-tickets" src="/static/events/vendor-markets-description.png" height="600px" width="400px">
-                </div>
-            </div>
-
-
-
-
-            <input type="radio" id="tabmore" name="mytabs">
-            <label for="tabmore"><img src="/static/events/17.png" height="100px" width="100px"></label>
-            <div class="tab">
-                <div class="container container-space-between"><img src="/static/events/and-more-label.png" height="200px" width="1000px"></div>
-
-                <div class="container container-space-between">
-                    <img src="/static/events/and-more-description.png" height="600px" width="400px">
-                    <img src="/static/events/55.png" height="400px" width="400px">
-                </div>
-            </div>
         </div>
-
-        
-
-        
-
     </div>
 
-    
+    <div class="container">
+        <div class="container container-space-between">
 
+            <a href="{{ url_for('WD') }}"><img id=kismet-label  src="/static/events/wellness-button.png" height="100%" width="100%"></a>
+            <a href="{{ url_for('VM') }}"><img id=kismet-label src="/static/events/vendor-markets-button.png" height="100%" width="100%"></a>
 
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container container-space-between">
+
+            <a href="{{ url_for('PIP') }}"><img id=kismet-label src="/static/21.png" height="50%" width="50%"></a>
+            <a href="{{ url_for('ANDMORE') }}"><img id=kismet-label src="/static/events/17.png" height="50%" width="50%"></a>
+        </div>
+    </div>
 
 
     
