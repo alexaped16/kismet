@@ -34,9 +34,13 @@
 
     <div class="container">
         <div class="container flex-wrap">
-            <img id=kismet-label src="/static/events/events-label.png" height="80%" width="80%">
-            <img id=kismet-label src="/static/events/tickets-available-soon.png" height="50%" width="50%">
-            <h3 id=kismet-label>Click to learn about different events!</h3>
+            <img id=kismet-label src="/static/events/events-label.png" height="100%" width="100%">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container container-center">
+            <h3 id="kismet-label">Click to learn about different events!</h3>
         </div>
     </div>
 
@@ -44,31 +48,68 @@
 
     <!-- TEST -->
 
+    <div class="container-events">
+
+        <div class="container">
+            <div class="container container-space-between">
+                <a id=kismet-label href="{{ url_for('DJ') }}"><img  src="/static/events/dj-button.png" height="70%" width="70%"></a>
+                <a id=kismet-label href="{{ url_for('CC') }}"><img  src="/static/events/the-cup-g0ac03a488_1920.png" height="50%" width="50%"></a>
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container container-space-between">
+
+                <a href="{{ url_for('WD') }}"><img id=kismet-label  src="/static/events/wellness-button.png" height="80%" width="80%"></a>
+                <a href="{{ url_for('VM') }}"><img id=kismet-label src="/static/events/vendor-markets-button.png" height="80%" width="80%"></a>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container container-space-between">
+
+                <a href="{{ url_for('PIP') }}"><img id=phone-70-percent src="/static/21.png" height="50%" width="50%"></a>
+                <a href="{{ url_for('ANDMORE') }}"><img id=phone-70-percent src="/static/events/17.png" height="50%" width="50%"></a>
+            </div>
+        </div>
+
+    </div>
+
+
     <div class="container">
-        <div class="container container-space-between">
-            <a id=kismet-label href="{{ url_for('DJ') }}"><img  src="/static/events/dj-button.png" height="50%" width="50%"></a>
-            <a id=kismet-label href="{{ url_for('CC') }}"><img  src="/static/events/the-cup-g0ac03a488_1920.png" height="50%" width="50%"></a>
-
-
+        <div class="container flex-wrap">
+            <img id=kismet-label class="tickets-available-soon" src="/static/events/tickets-available-soon.png" height="50%" width="50%">
         </div>
     </div>
 
-    <div class="container">
-        <div class="container container-space-between">
 
-            <a href="{{ url_for('WD') }}"><img id=kismet-label  src="/static/events/wellness-button.png" height="100%" width="100%"></a>
-            <a href="{{ url_for('VM') }}"><img id=kismet-label src="/static/events/vendor-markets-button.png" height="100%" width="100%"></a>
 
+    <!-- FOOTER -->
+
+
+    <footer>
+        <div class="container container-fluid">
+
+            <div class="row w-100">
+                <div id="container-center-phone" class="container">
+                    <a id="insta" class=" fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/">kismetstudiochicago</a>
+                </div>
+            </div>
+            
+                <div class="container-center">
+                    <img class="footer-logo" id="phone-10-percent" src="/static/plain-yellow-logo.png" width="10%" height="10%">
+                </div>
+            
+            <div class="row w-100">
+                <div class="container-center">
+                    <p id="copyright">Kismet Studio © 2022</p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="container container-space-between">
-
-            <a href="{{ url_for('PIP') }}"><img id=kismet-label src="/static/21.png" height="50%" width="50%"></a>
-            <a href="{{ url_for('ANDMORE') }}"><img id=kismet-label src="/static/events/17.png" height="50%" width="50%"></a>
-        </div>
-    </div>
+    </footer>
 
 
     

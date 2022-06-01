@@ -6,7 +6,9 @@ body{
 .flex-wrap{
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
+    padding: 30px; 
+    align-items: center; 
 }
 
 .container-items{
@@ -16,7 +18,11 @@ body{
 .container-center{
     display:flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 30px; 
 }
+
+
 
 @media (max-width:768px){
     .hero-image-test{
@@ -33,6 +39,33 @@ body{
     }
 
 }
+
+@media (max-width:768px){
+    #phone-70-percent{
+        height: 70%;
+        width: 70%;
+        padding-top: 30px;
+        padding-left:40px; 
+    }
+
+}
+
+
+
+@media (max-width:768px){
+    #phone-10-percent{
+        height: 10%;
+        width: 10%
+    }
+}
+
+@media (max-width:768px){
+    #container-center-phone{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 html, h1, h2, h3{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -52,8 +85,8 @@ nav{
     text-transform: uppercase;
     background-color:transparent;
     opacity: 90%;
-    margin-top: 50px; 
-    margin-bottom: 10px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
 }
 
 
@@ -61,7 +94,28 @@ nav{
     color: #ccff33;
 }
 
-#location{
+footer{
+    color:aliceblue;
+    background-color:#664AED;
+    padding: 10px;
+    font-size: x-small; 
+}
+
+#insta{
+    color:aliceblue;
+    margin-left: 20px;
+    margin-top: 10px;  
+}
+
+.footer-logo{
+    margin-right: 50px; 
+}
+
+#copyright{
+    margin-left: 10px; 
+}
+
+.location{
     padding-top: 100px;
     padding-bottom: 100px; 
     align-items: center;
@@ -81,9 +135,10 @@ nav{
 }
 
 .heroContents {
-	padding: 25px;
+	padding: 20px;
 	text-align: center;
 	color: white;
+    margin: 40px; 
 }
 
 .hero-title{
@@ -103,9 +158,6 @@ nav{
     background-image: linear-gradient(to right , #cb4445, #664AED);
 }
 
-#purple{
-    background-color:#ccff33;
-}
 
 #discoball-home{
     opacity: 30%
@@ -129,6 +181,10 @@ nav{
 
 #grad {
     background-image: linear-gradient(to right, #664AED , #cb4445);
+}
+
+.padding-40{
+    padding-bottom: 40px; 
 }
 
 .white{
@@ -175,8 +231,17 @@ nav{
     position: relative;
     left: 630px; 
     top: 340px; 
+}
 
-  
+/* WHAT WE ARE */
+
+.what-we-are-image{
+    margin: 50px; 
+}
+
+#what-we-are-footer{
+    color:antiquewhite;
+    background-color:#6c52ea;
 }
 
 
@@ -187,33 +252,21 @@ nav{
 /* events and calendar */
 
 
-
-#transparent-nav a{
-    color:#ccff33;
-}
-
-#events-label{
-    margin-right: 40px; 
-}
-
-#tickets-background-logo{
-    margin-top: 50px; 
-    margin-left: 120px; 
-}
-
-#events-label-tickets{
-    padding-right: 50px; 
-    margin-right: 70px;
-    margin-top: 10px; 
-}
-
 .events-container{
     display: flex;
     justify-content: center;
+    padding: 50px; 
 }
 
-.events-tabs-container{
-    padding-left: 100px; 
+
+.container-events{
+    padding: 60px;  
+    margin-right: 20px; 
+
+}
+
+.tickets-available-soon{
+    margin-bottom: 80px; 
 }
 
 
@@ -221,6 +274,7 @@ nav{
 .container-space-between{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #logo-background-events{
@@ -247,6 +301,8 @@ nav{
 
 /* FORM GROUPS */
 
+
+
 .form-group{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
@@ -255,26 +311,15 @@ nav{
     letter-spacing: 10px;
 }
   
-.form-label{
-      padding-top: 20px;
-      color:beige;
-  }
   
 .form-item{
-      padding: 3px;  
-  }
-  
-#form{
-    width: 500px; 
-    height: 600px;
+      padding: 3px;
+       
   }
 
-
-
-#form h1:hover{
-    letter-spacing: 17px;
-    font-size: 45px;
-}
+  .form-row{
+      width: 50%;
+  }
   
   
 .col input{
@@ -298,19 +343,13 @@ nav{
     font-size: 15px; 
     padding: 10px; 
     letter-spacing: 10px;
-    color:beige;
 }
   
 .form-item textarea{
-    border: 1px solid #ccff33;
     font-size: 20px;
     background-color: transparent;
 }
   
-.btn{
-    width: 50%;
-    border:#ccff33;
-}
 
 .btn{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -320,20 +359,19 @@ nav{
     letter-spacing: 10px;
     color:black;
     background-color:beige;
-    width: 50%;
+    width: 100%;
 }
 
 .form-control{
     text-transform: uppercase;
     font-size: 15px; 
-    margin-top: 20px; 
     letter-spacing: 10px;
     background-color: transparent;
     
 }
 
 .form-group{
-    width: 50%;
+    width: 100%;
     border:#ccff33;
 }
   
@@ -361,6 +399,10 @@ nav{
     justify-content:end;
     margin-top: 5%;
     margin-left: 200px; 
+}
+
+#weekend-social{
+    padding-top: 70px; 
 }
 
 
@@ -418,10 +460,17 @@ nav{
     padding-top: 50px; 
 }
 
-#tell-us-about-yourself{
-    padding-left: 200px; 
-    padding-top: 50px;
-    margin-bottom: 200px;  
+form{
+    margin-right: 40px; 
+}
+
+.join-community-text{
+    margin: 5px; 
+}
+
+.tell-us-about-yourself{
+    padding-top: 20px;
+      
 }
 
 #plain-yellow-logo{
@@ -431,15 +480,8 @@ nav{
     bottom: 300px;  
 }
 
-#form{
-    padding-top: 50px; 
-}
-
-.join-container{
-    margin-bottom: 100px;
-    position: absolute;
-    margin-left: 150px;
-    margin-top: 100px; 
+form{
+    margin-bottom: 60px; 
 }
 
 
