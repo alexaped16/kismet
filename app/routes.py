@@ -56,10 +56,7 @@ def VM():
     title = 'VM'
     return render_template('VM.html',  title=title)
 
-@app.route('/ANDMORE')
-def ANDMORE():
-    title = 'ANDMORE'
-    return render_template('ANDMORE.html',  title=title)
+
 
 
 
