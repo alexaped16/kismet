@@ -12,8 +12,12 @@
 </head>
 <body id="body-what-we-are">
 
-    <nav id="purple-nav" class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <!-- NAV BAR  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="nav-link font-weight-bold" href="{{ url_for('index') }}"><h3>Kismet Studio</h3></a>
+
+        <div class="nav-container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,11 +25,18 @@
 
                 </div>
                 <ul class="navbar-nav nav-fill w-100">
+
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('hours') }}">Hours</a>
+                        <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Calendar & Events</a>
+                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
                     </li>
                 </ul>
             </div>
@@ -43,26 +54,32 @@
 
     <!-- FOOTER -->
 
-<footer id="what-we-are-footer">
-    <div class="container container-fluid">
-
-        <div class="row w-100">
-            <div id="container-center-phone" class="container">
-                <a id="insta" class=" fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/">kismetstudiochicago</a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h1>Hours</h1>
+                <div class="days">                   
+                    <p>Mon - Tues |  Closed</p>
+                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
+                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="copyright">
+                    <img id="footer-logo" src="/static/plain-yellow-logo.png" width="20%" height="60%">
+                    <p>Kismet Studio © 2022</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="copyright">
+                    <h3>Follow Us on Insta</h3>
+                    <a id="insta" class="fa-4x fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
+                    <p>1136 N. Milwaukee Ave</p>
+                    <p>Chicago, IL 60642</p>
+                </div>
             </div>
         </div>
-        
-            <div class="container-center">
-                <img class="footer-logo" id="phone-10-percent" src="/static/plain-yellow-logo.png" width="10%" height="10%">
-            </div>
-        
-        <div class="row w-100">
-            <div class="container-center">
-                <p id="copyright">Kismet Studio © 2022</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
 

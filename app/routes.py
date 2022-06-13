@@ -7,12 +7,6 @@ def index():
     title = 'Home'
     return render_template('index.html',  title=title)
 
-
-@app.route('/hours')
-def hours():
-    title = 'Hours'
-    return render_template('hours.html',  title=title)
-
 @app.route('/activities')
 def activities():
     title = 'Activities'
