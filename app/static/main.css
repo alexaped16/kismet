@@ -242,9 +242,10 @@ footer{
 
 .location{
     padding-top: 100px;
-    padding-bottom: 100px; 
+    padding-bottom: 50px; 
     align-items: center;
 }
+
 
 
 
@@ -257,12 +258,18 @@ footer{
 
 }
 
+.vision{
+    margin-top: 50px; 
+}
+
 .heroContents {
 	padding: 20px;
 	text-align: center;
 	color: white;
     margin: 40px; 
 }
+
+
 
 .hero-title{
     background-position: center;
