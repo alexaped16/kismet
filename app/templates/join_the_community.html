@@ -1,54 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
-<title>Title</title>
-</head>
+{% extends 'base.html' %}
+
+
+{% block content %}
+
 <body id="grad-3">
 
-    <!-- NAV BAR  -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="nav-link font-weight-bold" href="{{ url_for('index') }}"><h3>Kismet Studio</h3></a>
-
-        <div class="nav-container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar10">
-
-                </div>
-                <ul class="navbar-nav nav-fill w-100">
-
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
-                    </li>
-                </ul>
+    <div class="big-image-contact">
+        <div class="overlay">
+            <div class="overlay-text-container-contact">
+                <h1 class="massive-title ">Join the Community</h1>
+                <h3 class="massive-title ">Message us if you have a question, want to inquire about an event, or want general information. We can't wait to hear from you!</h3>
             </div>
         </div>
-    </nav>
+    </div>
 
-<div class="join-the-community-grid-container">
+    <section class=" align-center dark-50">
+        <div class="row flex mt40">
+            <p class="pinside20"> If you want to rent space or buy tickets for an event, you can do so here: </p>
+            <div class="pinside20"><a href=https://linktr.ee/kismetstudiochicago class="btn-2">Get Tickets</a> </div>
+
+        </div>
+    </section>
 
  
-        <div class="activities-header-container">
-            <img class="kismet-label" src="/static/join-the-community.png" height="70%" width="70%">
-            <img class="kismet-label low-opacity"  src="/static/19.png" height="20%" width="20%">
+        <div class="grid-75 pinside40">
+            <div></div>
+            <img class="kismet-label low-opacity pinside20"  src="/static/19.png" height="100%" width="100%">
+        </div>
+
+        <div class="grid-3">
+            <div></div>
+            <div class="text-center pinside20">
+                <p>Be sure to tell us about yourself! Tell us who you are, what you're all about & send along links to your socials</p>
+            </div>
+            <div></div>
+
         </div>
 
 
@@ -60,7 +46,7 @@
               <div  class="form-group">
                 <div class="form-row">
                   <div class="col">
-                    <h3>Contact</h3>
+                    <h3 class="mb20">Message Us!</h3>
                     <input id=kismet-label type="email" name="email" class="form-control" placeholder="Email" required>
                   </div>
                 </div>
@@ -74,46 +60,14 @@
     </div>
 
 
-    <div class="item-pink-background">
-        <div class="container flex-wrap">
-            <img id=kismet-label class="tell-us-about-yourself" src="/static/tell-us-about-yourself-title.png" height="70%" width="70%">
-            <img id=kismet-label class="join-community-text" src="/static/tell-us-about-yourself.png" height="60%" width="60%">
-        </div>
-    </div>
-
-</div>
 
 
 
-<!-- FOOTER -->
+</body>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-item">
-            <h1>Hours</h1>
-            <div class="days">                   
-                <p>Mon - Tues |  Closed</p>
-                <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
-                <p>Sat - Sun:  11:00 am - 7:00 pm</p>
-            </div>
-        </div>
-        <div class="footer-item">
-            <div class="copyright">
-                <img id="footer-logo" src="/static/plain-yellow-logo.png" width="20%" height="60%">
-                <p>Kismet Studio © 2022</p>
-            </div>
-        </div>
-        <div class="footer-item">
-            <div class="copyright">
-                <h3>Follow Us on Insta</h3>
-                <a id="insta" class="fa-4x fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
-                <p>1136 N. Milwaukee Ave</p>
-                <p>Chicago, IL 60642</p>
-            </div>
-        </div>
-    </div>
-</footer>
- 
+
+{% endblock content %}
+
 
 
 

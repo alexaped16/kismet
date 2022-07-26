@@ -1,146 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
-<title>Title</title>
-</head>
+{% extends 'base.html' %}
+
+
+{% block content %}
 
 <body id="grad-2">
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="nav-link font-weight-bold" href="{{ url_for('index') }}"><h3>Kismet Studio</h3></a>
-
-        <div class="nav-container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar10">
-
-                </div>
-                <ul class="navbar-nav nav-fill w-100">
-
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
 
     <!-- ACTIVITIES CONTENT  -->
 
-    <div class="activities-grid-container">
-
-    <div class="item-pink-background">
-        <div class="activities-header-container">
-            <img id="phone-10-percent" src="/static/activities-label.png" height="8%" width="8%">
-            <img id="phone-30-percent" class="low-opacity" src="/static/68.png" height="30%" width="30%">
-            <img id="phone-30-percent" class="low-opacity" class="hero-image-test" src="/static/hero-image-3.png" height="40%" width="40%">
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="container container-center">
-            <h1>Daily Popup</h1>
-            <p>12$ ticket</p>
-        </div>
-    </div>
-
-    <div class="item-pink-background">
-        <div class="activities-header-container">
-            <img id="phone-30-percent" class="low-opacity" src="/static/activities-footer.png" height="50%" width="50%">
-            <img id="phone-30-percent" class="low-opacity" src="/static/hero-image-2.png" height="20%" width="20%">
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="container container-center">
-            <h1>Weekend Social Events</h1>
-            <p class="text-center" >*ticket variable*</p>
-            <p> - Music and Entertianment</p>
-            <p> - Brand / Creative Collaborations</p>
-            <p>- Vendor Markets</p>
-            <p>- Wellness Days</p>
-        </div>
-    </div>
-
-    <div class="item-pink-background">
-        <div class="activities-header-container">
-            <img id="phone-30-percent" class="low-opacity" src="/static/19.png" height="20%" width="20%">
-            <img id="phone-30-percent" class="low-opacity" src="/static/21.png" height="20%" width="20%">
-        </div>
-    </div>
-
-
-    <div class="item">
-        <div class="container-center">
-            <h1>Private Rentals</h1>
-            <p>- Peer Space</p>
-            <p>- Photo Shoots</p>
-            <p>- External Brands</p>
-            <p>- Galleries/Showcasing</p>
-        </div>
-    </div>
-
-    <div class="item-pink-background">
-        <div class="activities-header-container">
-            <img id="phone-10-percent" class="low-opacity" src="/static/68.png" height="10%" width="10%">
-            <img id="phone-30-percent" src="/static/kismet-label.png" height="80%" width="80%">
-            <img id="phone-10-percent" class="low-opacity" src="/static/68.png" height="10%" width="10%">
-        </div>
-    </div>
-
-    </div>
-
-
-
-    <!-- FOOTER -->
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <h1>Hours</h1>
-                <div class="days">                   
-                    <p>Mon - Tues |  Closed</p>
-                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
-                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="copyright">
-                    <img id="footer-logo" src="/static/plain-yellow-logo.png" width="20%" height="60%">
-                    <p>Kismet Studio © 2022</p>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="copyright">
-                    <h3>Follow Us on Insta</h3>
-                    <a id="insta" class="fa-4x fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
-                    <p>1136 N. Milwaukee Ave</p>
-                    <p>Chicago, IL 60642</p>
-                </div>
+    <div class="big-image-activites">
+        <div class="overlay">
+            <div class="overlay-text-container">
+                <h1 class="massive-title">Activities</h1>
+                <h3 class="massive-title">Daily Pop-ups, Weekend Events, & Private Rentals</h3>
             </div>
         </div>
-    </footer>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+    <div class="grid-3">
+        <div class="text-center pinside40">
+            <h1 class="text-center pinside10">Daily Popup</h1>
+            <p class="text-center pinside40">General Admission 12$ ticket</p>
+        </div>
+        <div id="img" class=" pinside40" ><img src="/static/pictures/dclassic 2022-07-26 090721.311.JPG" height="100%" width="100%"></div>
+        <div>
+            <h3 class="mt80 pinside40"> Come Say Hi! </h3>
+            <p class="pinside40">Stop by and check out our space! See what we're all about. 12 dollars upon entry.</p>
+        </div>
+    </div>
+
+
+
+    <div class="item-pink-background">
+        <div class="grid-3">
+            <div></div>
+            <div id="img" class=" low-opacity pinside40" ><img src="/static/pictures/dclassic 2022-07-26 090413.710.JPG" height="100%" width="100%"></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="grid-3">
+       
+            <h1 class="text-center pinside40">Weekend Social Events</h1>
+            <div>
+                <p class="text-center pinside40" >*ticket variable*</p>
+                <div class="text-center pinside10"><a href=https://linktr.ee/kismetstudiochicago class="btn-2">Buy Tickets</a> </div>
+
+            </div>
+            <div class="text-center pinside40">
+                <p class="pinside10">  Music and Entertianment</p>
+                <p class="pinside10"> Creative Collaborations</p>
+                <p class="pinside10"> Vendor Markets</p>
+                <p class="pinside10"> Wellness Days</p>
+           
+            </div>
+    </div>
+
+    <div class="item-pink-background">
+        <div class="grid-3">
+            <div></div>
+            <div id="img" class="low-opacity pinside40" ><img src="/static/pictures/dclassic 2022-07-26 090707.744.JPG" height="100%" width="100%"></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="grid-3">
+       
+        <div>
+            <h1 class="text-center pinside40">Private Rentals</h1>
+            <p class="text-center pinside20">Plan your next party at Kismet! </p>
+            <div class="text-center pinside10"><a href=https://www.peerspace.com/pages/listings/628fb1b8c986d7000e9947ea?utm_source=copy_link&utm_campaign=listing_sharing class="btn-2">Book your Spot</a> </div>
+        </div>
+        <div id="img" class=" pinside40" ><img src="/static/pictures/dclassic 2022-07-26 090730.514.JPG" height="100%" width="100%"></div>
+
+        <div class="text-center pinside40">
+            <h3 class="pinside10">Types of Events: </h3>
+            <p class="pinside10"> Events including, but not limited to Photo Shoots, External Brands, Showcasings & Peer Space. </p>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+    {% endblock content %}
+
+
+   

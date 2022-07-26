@@ -25,11 +25,20 @@ def calendar_and_events():
 @app.route('/join_the_community')
 def join_the_community():
     title = 'Join The Community'
-
     return render_template('join_the_community.html', title=title)
 
+@app.route('/merch')
+def merch():
+    return render_template('merch.html')
+
+@app.route('/artist_competitions')
+def artist_competitions():
+    return render_template('artist_competitions.html')
 
 
+
+
+# EVENTS PAGE 
 
 @app.route('/DJ')
 def DJ():

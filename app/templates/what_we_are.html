@@ -1,47 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
-<title>Title</title>
-</head>
-<body id="body-what-we-are">
+{% extends 'base.html' %}
 
-    <!-- NAV BAR  -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="nav-link font-weight-bold" href="{{ url_for('index') }}"><h3>Kismet Studio</h3></a>
+{% block content %}
 
-        <div class="nav-container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar10">
+<body class="purple">
+    
 
-                </div>
-                <ul class="navbar-nav nav-fill w-100">
-
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <div class="container">
         <div class="container flex-wrap">
@@ -50,43 +14,10 @@
         </div>
     </div>
 
-
-
-    <!-- FOOTER -->
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <h1>Hours</h1>
-                <div class="days">                   
-                    <p>Mon - Tues |  Closed</p>
-                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
-                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="copyright">
-                    <img id="footer-logo" src="/static/plain-yellow-logo.png" width="20%" height="60%">
-                    <p>Kismet Studio © 2022</p>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="copyright">
-                    <h3>Follow Us on Insta</h3>
-                    <a id="insta" class="fa-4x fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
-                    <p>1136 N. Milwaukee Ave</p>
-                    <p>Chicago, IL 60642</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
-</html>
 
+
+
+    {% endblock content %}
 
 

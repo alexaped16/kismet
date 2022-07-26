@@ -7,31 +7,104 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='fonts/Roboto-Bold.ttf')}}">
+<link rel="stylesheet" href="/static/main.css">
+
+<title>Kismet</title>
 </head>
-<body class="purple">
+<body>
 
-    <div class="container purple">
 
-    {% include 'alert_message.html' %}
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a id="nav-logo" class="nav-link  font-weight-bold" href="{{ url_for('index') }}"><h3>Kismet Studio</h3></a>
+
+        <div class="nav-container">
+
+                <ul class="navbar-nav nav-fill w-100">
+
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
+                    </li>
+
+                </ul>
+        </div>
+    </nav>
+
+
 
     {% block content %}
 
     {% endblock content %}
 
-    </div>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-item">
+                
+                   
+                                 
+                    <p>Mon - Tues |  Closed</p>
+                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
+                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
+               
+            </div>
+
+
+
+            <div class="footer-item">
+                <div class="copyright">
+                    
+                    <a id="insta" class="fa-4x fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
+
+                </div>
+            </div>
+
+
+            <div class="footer-item">
+                <div class="copyright">
+                    
+                    <p>1136 N. Milwaukee Ave</p>
+                    <p>Chicago, IL 60642</p>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="copyright-area w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Website Design <a href="https://laids.herokuapp.com/">Vernon Web Designs</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+
+        
+    </footer>
 
 
 
 
 
-
+<script src="app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>

@@ -1,132 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
-<title>Title</title>
-</head>
+{% extends 'base.html' %}
+
+
+{% block content %}
+
 <body id="grad">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="nav-link font-weight-bold" href="{{ url_for('index') }}"><h3>Kismet Studio</h3></a>
-
-        <div class="nav-container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar10">
-
-                </div>
-                <ul class="navbar-nav nav-fill w-100">
-
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('what_we_are') }}">What We Are</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('calendar_and_events') }}">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('activities') }}">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="{{ url_for('join_the_community') }}">Join The Community</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-        
-    </div>
 
 
-    
-        <div class="container">
-            <div class="container flex-wrap">
-                <img id=hero-image-test src="/static/kismet-studio-chicao-03.png" height="50%" width="50%">
-                <img id=hero-image-test src="/static/kismet-studio-chicao-04.png" height="50%" width="50%">
-            </div>
-        </div>
-
-
-    
-
-
-
-    <div class="heroImage">
-        <div class="heroContents">
-            <img class="kismet-label" src="/static/hero-image-2.png" height="30%" width="30%">
-            <img class="kismet-label" src="/static/hero-image.png" height="30%" width="30%">
-            <img class="kismet-label" src="/static/hero-image-3.png" height="30%" width="30%">
+<div class="big-image-index">
+    <div class="overlay">
+        <div class="overlay-text-container">
+            <h1 class="massive-title">Kismet Studio Chicago</h1>
+            <h3 class="massive-title">Event Space & Selfie Museum in Wicker Park</h3>
         </div>
     </div>
+</div>
 
+<div class="grid-2 ">
+        <div class=" container align-center pinside40">
+            
+            <h2 class="medium-title"> 1136 N. MILWAUKEE Ave Chicago, IL 60642</h2>
+        </div>
+        <div class="pinside80 low-opacity ">
+            <img class=" " src="/static/plain-yellow-logo.png" height="100%" width="100%">
+        </div>
+</div>
+
+
+
+    <section class="light mb20">
+        <div class="container left">
+
+        <h1 class="mission-title mb30" >Vision</h1>
+        <p class="mission-statement mb40">Extend the mission beyond the physical space. Contributing to the Chicago Art Scene and having an overall impact on wider mainstream culture. </p>
+        </div>
+    </section>
+
+
+<section class="light">
+    <div class="container left">
+    <h1 class="mission-title mb30" >Mission</h1>
+    <p class="mission-statement">Facilitate a space for creators, artists, and their lovers to congregate. Creating a playform to showcase, share, and experience art & culture. </p>
+    </div>
+</section>
+
+<section class="dark">
     <div class="container">
-        <div class="container flex-wrap">
-            <img id=phone-70-percent class="location" src="/static/location.png" height="60%" width="60%">
-            <img id=phone-50-percent src="/static/19.png" height="30%" width="30%">
-        </div>
+    <div class="col-3 text--center pinside40">
+        <img src="/static/pictures/dclassic 2022-07-26 122515.292.JPG" alt="" class=" details-img"/>
     </div>
+    <div class="col-7 details dark-50">
+        <h3 class="pinside10">Artist Competitions</h3>
+        <p class="mr100 pinside10">Are you an artist? Take some time to learn more about our Kismet Studio Artist Competitions. </p>
+        <div class="mr100 pinside10"><a href="{{ url_for('artist_competitions') }}" class="btn mr100 pinside10">Learn More</a></div>
+    </div>
+    </div>
+</section>
 
+
+<div class="grid-3 purple ">
+       
+    <div class="">
+        <h3 class="text-center pinside40 mt30 massive-title">Shop Kismet Studio</h3>
+    </div>
+    <div id="img" class="low-opacity pinside10 mt40 rounded mb40" ><img src="/static/pictures/dclassic 2022-07-26 090707.744.JPG" height="100%" width="100%"></div>
+
+    <div class="text-center pinside40 column align-center">
+        <h3 class="text-center pinside10 ">Get offical Kismet Studio Merch</h3>
+        <div class="text-center pinside10"><a href=https://kismetstudiochicago.myshopify.com/ class="btn-2">Shop Kismet</a> </div>
+
+    </div>
+</div>
+
+<div class="item-pink-background">
+    <div class="grid-3">
+        <div></div>
+        <div id="img" class="low-opacity pinside40" ><img src="/static/pictures/dclassic 2022-07-26 162149.609.JPG" height="100%" width="100%"></div>
+        <div></div>
+    </div>
+</div>
+
+
+<section class="dark">
     <div class="container">
-        <div class="container flex-wrap vision">
-            <img id=phone-50-percent src="/static/vision-label.png" height="50%" width="50%">
-            <img id=kismet-label src="/static/vision-description.png" height="80%" width="80%">
-        </div>
+    <div class="col-3 text--center pinside40">
+        <img src="/static/pictures/dclassic 2022-07-26 122656.739.JPG" alt="" class=" details-img"/>
     </div>
-
-
-    <div class="container">
-        <div class="container flex-wrap">
-            <img id=kismet-label src="/static/mission-label.png" height="80%" width="80%">
-            <img id=kismet-label src="/static/mission-description.png" height="90%" width="90%">
-        </div>
+    <div class="col-7 details dark-50">
+        <h3 class="pinside10">Live Music Talent Call</h3>
+        <p class="mr100 pinside10">Kismet Studio wants to celebrate local Chicago talent and we want you and your band to be apart of it!</p>
+        <div class="mr100 pinside10"><a href="https://docs.google.com/forms/d/1xIv07NsJJAjohhmXp5f62n2kr7IhaWgSFlJ4JfGLO3M/viewform?edit_requested=true" class="btn mr100 pinside10">Sign Up</a></div>
     </div>
-
     </div>
+</section>
 
-    <footer>
-        <div class="footer-container">
 
-            <div class="footer-item">
-                <h1>Hours</h1>
-                <div class="days">                   
-                    <p>Mon - Tues |  Closed</p>
-                    <p>Wed - Fri:  3:00 pm - 8:00 pm</p>
-                    <p>Sat - Sun:  11:00 am - 7:00 pm</p>
-                </div>
-            </div>
+</body>
 
-            <div class="footer-item">
-                <div class="copyright">
-                    <img id="footer-logo" src="/static/plain-yellow-logo.png" width="20%" height="60%">
-                    <p>Kismet Studio © 2022</p>
-                </div>
-            </div>
+ 
 
-            <div class="footer-item">
-                <div class="copyright">
-                    <h3>Follow Us on Insta</h3>
-                    <a id="insta" class="fa-4x fab fa-instagram nav-link font-weight-bold" href="https://www.instagram.com/kismetstudiochicago/"></a>
-                    <p>1136 N. Milwaukee Ave</p>
-                    <p>Chicago, IL 60642</p>
-                </div>
-            </div>
-         
-
-        </div>
-    </footer>
-
+ 
      
     
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+    {% endblock content %}
